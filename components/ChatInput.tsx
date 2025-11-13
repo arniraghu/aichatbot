@@ -37,7 +37,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading }
   };
 
   return (
-    <div className="flex-shrink-0 p-4 bg-gray-800/70 backdrop-blur-sm border-t border-gray-700">
+    <div className="flex-shrink-0 p-4 bg-zinc-900/70 backdrop-blur-sm border-t border-zinc-800">
       <div className="flex items-center space-x-4 max-w-4xl mx-auto">
         <textarea
           value={input}
@@ -45,13 +45,13 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading }
           onKeyPress={handleKeyPress}
           placeholder="Type your message here..."
           rows={1}
-          className="flex-grow bg-gray-900 rounded-lg p-3 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-shadow duration-200 text-gray-200 placeholder-gray-500 max-h-40"
+          className="flex-grow bg-zinc-800 rounded-lg p-3 resize-none focus:outline-none focus:ring-2 focus:ring-violet-500 transition-shadow duration-200 text-zinc-200 placeholder-zinc-500 max-h-40"
           disabled={isLoading}
         />
         <button
           onClick={handleSend}
           disabled={isLoading || !input.trim()}
-          className="p-3 rounded-full bg-indigo-600 text-white disabled:bg-gray-600 disabled:cursor-not-allowed hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500 transition-all duration-200"
+          className="p-3 rounded-full bg-violet-600 text-white disabled:bg-zinc-700 disabled:cursor-not-allowed hover:bg-violet-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-violet-500 transition-all duration-200"
         >
           <SendIcon isLoading={isLoading} />
         </button>

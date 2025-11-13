@@ -53,7 +53,7 @@ const App: React.FC = () => {
   }, [isLoading]);
 
   return (
-    <div className="flex flex-col h-screen bg-gray-900 text-white font-sans">
+    <div className="flex flex-col h-screen bg-zinc-950 text-zinc-200 font-sans">
       <Header />
       <MessageList messages={messages} />
       <div className="p-4">
